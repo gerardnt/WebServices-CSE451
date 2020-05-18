@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSE 451 Final Project</title>
+  <meta charset="UTF-8">
+  <!--
+    Nicholas Gerard
+    CSE 451 Spring 2020
+    Final Project for CSE 451
+        This application gets the current robots and displays them on a grid 
+        the User will interact with Alexa in order to move the robots along the grid 
+
+-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="robotDrawing.js"></script>
+  <script src="robot.js"></script>
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <style>
+    body {
+      background-color: #263238;
+    }
+
+    html {
+      zoom: 0.76;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s3 m3 l3 xl3">
+        <div id='display'>
+          <div class="row">
+            <div class="col s12 m12 l12 xl12">
+              <div class="card-panel purple accent-2">
+                <span class="card-title white-text">Bob's Last Move Time</span>
+                <hr>
+                <p class="text-justify white-text" id="lastMoveBob"></p>
+
+              </div>
+              <!--end of bob card-->
+            </div>
+            <!--end of col 12 for bob panel-->
+          </div>
+          <!--end of row for bob tile-->
+          <div class="row">
+            <div class="col s12 m12 l12 xl12">
+              <div class="card-panel purple accent-2">
+                <span class="card-title white-text">Alice's Last Move Time</span>
+                <hr>
+                <p class="text-justify white-text" id="lastMoveAlice"></p>
+
+              </div>
+              <!--end of alice panel-->
+            </div>
+            <!--end of the alice tile col12-->
+          </div>
+          <!--end of the row-->
+        </div>
+        <!--End of the display div-->
+      </div>
+      <!--End of Col 3 for Tiles for last updated time-->
+      <div class="col s9 m9 l9 xl9">
+        <canvas id='canvas' width='1500' height='1500'>
+        </canvas>
+      </div>
+      <!--End of col9 for the canvas-->
+    </div>
+    <!--End of Row-->
+  </div>
+  <!--End of container-->
+
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--
+Nicholas Gerard
+Spring 2020 
+Lambda 1 Project
+
+This project allows for users to search movies by year and it displays the movies with 
+Any comments that were added to them along along with all the other data about the movie 
+-->
+
+  <meta charset="UTF-8">
+  <title>Lambda Movies Project</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="movies.js"></script>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <style>
+    body {
+      background-color: #212121;
+      color: white;
+
+    }
+
+    input {
+
+      color: white;
+
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="col s12 m12 lg12 xl12 center-align">
+      <h2 class="white-text">Movies</h2>
+
+    </div>
+  </div>
+
+
+  <div class="row" id="ErrorMsg">
+
+  </div>
+
+  <div class="row ">
+    <form class="col s12 m12 lg12 xl12 ">
+      <div class="row">
+        <div class="input-field col s12 m12 lg12 xl12">
+          <input id="year" type="text" class="validate  inputText">
+          <label for="year">Search</label>
+          <span class="helper-text white-text" data-error="wrong" data-success="right">Search a year for a list of
+            movies</span>
+        </div>
+      </div>
+      <button class="btn waves-effect waves-light red darken-3" type="submit" name="action" id="yearSubmit">Search
+        <i class="material-icons right">send</i>
+      </button>
+    </form>
+  </div>
+
+
+  <div id="comments" class="grey darken-4">
+    <div id="commentTitle" class="center-align">
+
+    </div>
+    <div class="row">
+      <form>
+        <input disabled value="" class="white-text" type="hidden" id="movieTitle">
+        <input disabled value="" class="white-text" type="hidden" id="yearInput">
+        <div class="row">
+          <div class="input-field col s12">
+            <textarea id="commentText" class="materialize-textarea white-text"></textarea>
+          </div>
+        </div>
+        <button class="btn waves-effect waves-light red darken-3" type="submit" name="action" id="commentSubmit">add
+          Comment
+        </button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <div class="row">
+    <div class="col s12 m12 lg12 xl12">
+      <table class="striped">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Genres</th>
+            <th>Plot</th>
+            <th>Comments</th>
+            <th>Add/Update Comment</th>
+          </tr>
+        </thead>
+
+        <tbody id="movieTable">
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 2 Javascript Assignment</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="week2-RestCall.js"></script>
+    <style>
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 20px;
+        }
+        .container-fluid{
+            padding-left: 10%;
+
+        }
+        .imgLogo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    </style>
+    <!--
+        Nicholas Gerard 
+        CSE 451
+        Javascript Week 2 Assignment
+        2/11/2020 
+
+Used: 
+Campbells code of Jquery example
+https://stackoverflow.com/questions/733314/jquery-loop-over-json-result-from-ajax-success : for each loop after an Ajax success
+https://codepen.io/Huso/pen/YOZWoV : have bootstrap alerts automatically fade out 
+https://www.w3schools.com/bootstrap4/bootstrap_alerts.asp : how to create alerts in bootstrap
+https://www.w3schools.com/howto/howto_css_image_center.asp : how to center the image 
+https://www.kirupa.com/html5/clipping_content_using_css.htm : how to handle the error messages with a scroll bar
+
+
+    -->
+</head>
+
+<body>
+    <div class="container-fluid text-center">
+        <div class="row content">
+            <div class="col-md-10 text-left">
+                <div class="container">
+                    <div class="jumbotron" style="text-align: center;">
+                        <h1>Nick Gerard Week 2 Assignment</h1>
+                        <img src="colorado.jpg" width="200" height="200" alt="Nicholas Gerard's Logo. A picture of a Tent and ATV in the Mountains of Colorado" class="imgLogo">
+                    </div>
+                    <div id = "error" style="max-height: 270px; overflow: auto;">
+
+                    </div>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Key</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody id="TableBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div> <!-- col-sm-8-->
+        </div>
+        <!--row-->
+    </div>
+    <footer class="container-fluid text-center">
+            <p>Nicholas Gerard Week 2 Javascript Assignment 2/11/2020</p>
+        </footer>
+    <!--container-->
+
+</body>
+
+</html>

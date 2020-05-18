@@ -1,0 +1,81 @@
+<!Doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rest</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script>
+
+/*
+Calling the Rest Services and obtaining all the keys in the array. 
+Then calling the values function with the associated keys by looping through the returned array
+*/
+function getKeys() {
+	$.ajax({url:"https://campbest.451.csi.miamioh.edu/cse451-campbest-web-public-2020/exam/rest.php",
+		type:"get",
+		dataType:'json',
+		success: function(data) {
+        $.each(data.examData, function(val, key){
+                  $("#tableBody").append(`<tr> <td> ${key} </td> </tr>`)
+        });
+        },
+        // If unable to reach the service then we show a bootstrap alert and retry. We then wait 3 seconds and fade out the message 
+		error:function(data) {
+            $("#error").append(`<div class="alert alert-danger alert-dismissible " role="alert">  Error Fetching the Keys retrying momentarily. </div>`);
+            window.setTimeout(function() {
+                $(".alert").fadeTo(500, 0).slideUp(500, function(){
+                    $(this).remove(); 
+                });
+            }, );
+            getKeys();
+			}
+	      });
+}
+
+
+//Call the getKeys method to call the Rest service 
+$(document).ready(function() {
+		getKeys();
+		});
+    </script>
+    <!--
+Nicholas Gerard
+Javascript Ajax call to keyvalue with keys that start with numbers
+cse451
+2/26/2020
+-->
+
+
+</head>
+
+<body>
+    <div class="container">
+            <div class="jumbotron text-center"><h2>Nicholas Gerard REST Exam Question </h2></div><!--End of Jumbotron-->
+            <div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Keys</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                </table>
+            </div>
+            <div id ="error">
+
+            </div>
+    </div>
+    <!--End of container Div -->
+
+    <footer class="container-fluid text-center">
+        <p>Nicholas Gerard Exam01 CSE 451 2/26/2020</p>
+    </footer>
+
+</body>
+
+</html>

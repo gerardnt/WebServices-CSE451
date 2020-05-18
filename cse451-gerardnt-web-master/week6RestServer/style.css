@@ -1,0 +1,40 @@
+#formContainer {
+	width: 50%;
+}
+
+#mainpage {
+	width: 50%;
+}
+
+#footer {
+	border-top: thick solid black;
+	width: 90%;
+	margin: auto;
+}
+
+#details {
+	position:absolute;
+	background:white;
+	border: thick solid black;
+	width: 400px;
+	top: 150px;
+	left: 50%;
+	display: none;
+	transform: translate(-50%,0);
+}
+
+#details td {
+	text-align: left;
+}
+
+
+#msg {
+	display: hide;
+}
+
+#addForm {
+	display: none;
+}
+
+
+

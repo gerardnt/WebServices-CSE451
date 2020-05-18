@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+   <title>
+    HTML Assignment 2     
+   </title> 
+    <!-- 
+    Nicholas Gerard
+    cse451 - Spring 2020
+    2/7/2019
+    Assignment HTML2
+
+    Used the following resources to help me:
+    W3 schools for almost everything bootrstap related,
+    https://mdbootstrap.com/legacy/4.3.2/?page=css/layout : to help figure out the 50% part by just using a blank filler div with the class col
+    https://stackoverflow.com/questions/32819543/draw-a-line-in-a-div : helping to draw the black lines to seperate items
+
+    -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="text-center">
+    <div class="jumbotron" style="min-height: 75px;">
+        <div class="page-header">
+          <h1> An Awesome bootstrap template </h1>
+        </div> <!-- Closing page header Div -->
+     <p> 
+     Nicholas Gerard CSE451 Assignment HTML2 2/7/2020
+     </p>
+    </div> <!-- Closing Jumbotron Div -->
+    <div class="container">
+      <div class="row">
+        <div class="col-3"></div> <!--closing the div that shifts the column to 50%-->
+        <div class="col-6">
+          <div>
+          <h2>lorem ipsum</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Vitae tortor condimentum lacinia quis vel. Posuere sollicitudin aliquam ultrices sagittis.
+            Libero enim sed faucibus turpis in. Lectus magna fringilla urna porttitor rhoncus dolor
+            purus non enim. Luctus accumsan tortor posuere ac ut consequat semper viverra. 
+            Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Pellentesque 
+            elit ullamcorper dignissim cras tincidunt lobortis feugiat. Sit amet dictum sit
+            amet justo donec enim. Pulvinar pellentesque habitant morbi tristique senectus et 
+            netus. Volutpat est velit egestas dui. Leo in vitae turpis massa sed elementum tempus.
+            Pretium nibh ipsum consequat nisl vel pretium lectus quam id. Et leo duis ut diam quam
+            nulla porttitor. Vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt ornare massa.
+          </p>
+          <p>
+            At tellus at urna condimentum mattis pellentesque. Volutpat sed cras ornare arcu. Vel eros donec ac odio tempor.
+            Blandit aliquam etiam erat velit. Faucibus vitae aliquet nec ullamcorper sit amet risus nullam. Sed tempus urna et 
+            pharetra pharetra massa. Ultricies lacus sed turpis tincidunt id aliquet. Eget velit aliquet sagittis id consectetur purus ut
+            faucibus pulvinar. Phasellus egestas tellus rutrum tellus pellentesque. Tristique senectus et netus et malesuada fames ac turpis. 
+            Mauris pharetra et ultrices neque. Facilisis sed odio morbi quis commodo odio aenean sed. Scelerisque eleifend donec pretium vulputate sapien nec sagittis.
+
+          </p>
+          <p>
+            Volutpat diam ut venenatis tellus in. Risus ultricies tristique nulla aliquet. Viverra nam 
+            libero justo laoreet sit amet cursus. Fermentum odio eu feugiat pretium nibh ipsum consequat
+            nisl vel. Sollicitudin tempor id eu nisl. Gravida arcu ac tortor dignissim convallis aenean et tortor at. 
+            Consequat id porta nibh venenatis cras sed. 
+            Curabitur gravida arcu ac tortor dignissim convallis aenean et. 
+            Sit amet risus nullam eget felis eget nunc lobortis. At volutpat diam ut venenatis tellus in metus.
+          </p>
+          <a href="https://loremipsum.io/" target="_blank">lorem ipsum generator source</a>
+        </div><!--Div ending the Lorem ipsum paragraph-->
+        <div style="border-top: 5px solid black; margin-bottom: 0px;">
+        <h2>Pictures</h2>
+        <figure>
+          <img src="katie.jpg" alt="Picture of Katie Olson fixing her hair at a coffee bar in Colorado" width="300" height="400">
+          <figcaption>
+           My Partner Katie Olson at a Coffee Bar in Colorado.
+           </figcaption>
+        </figure>  
+        <figure>
+          <img src="ColoradoMountains.jpg" alt="Picture of an orange tent and atv in the mountains of colorado" width="350" height="400">
+          <figcaption>
+           Camping in the mountains of Breckenridge Colorado 
+           </figcaption>
+        </figure>  
+        <figure>
+          <img src="Clevelandview.jpg" alt="View of downtown Cleveland on the right and the lake on the left" width="300" height="400">
+          <figcaption>
+           View of downtown Cleveland
+           </figcaption>
+        </figure>  
+          I took all these pictures 
+        </div><!--Div ending the Pictures-->
+    
+          <div>
+            <h2>Riddles</h2>
+            <p style="border: 2px solid black;">
+              Q. I’m tall when I’m young and I’m short when I’m old. What am I?
+              <br>
+              A. Candle
+
+            </p>
+            <p style="border: 2px solid black;">
+              Q. Where can you find cities, towns, shops, and streets but no people?
+              <br>
+              A. Map
+
+            </p>
+            <p style="border: 2px solid black;">
+              Q. What is so fragile that saying its name breaks it?
+              <br>
+              A. Silence
+
+            </p>
+            <p>All New Riddles from <a href="https://www.artofmanliness.com/articles/riddles-for-kids/">Here</a></p>
+          </div><!--End riddles Div--> 
+
+          <div class=" table-responsive " style="border-top: 5px solid black; margin-bottom: 0px;">
+          <h2>Average ACT Score By College at Miami University</h2>
+          <table class="table table-striped">
+             <thead>
+                <tr>
+                    <th scope="col"> College </th>
+                    <th scope="col"> 2014 </th>
+                    <th scope="col"> 2015 </th>
+                    <th scope="col"> 2016 </th>
+                    <th scope="col"> 2017 </th>
+                    <th scope="col"> 2018 </th>
+                  </tr>
+             </thead> 
+            <tbody>
+                <tr>
+                    <th scope="row"> CEC </th> 
+                    <td> 28.5 </td>
+                    <td> 28.7 </td>
+                    <td> 29.1 </td>
+                    <td> 29.4 </td>
+                    <td> 29.1 </td>
+                  </tr>
+                  <tr>
+                  <th scope="row">
+                   Farmers
+                  </th>
+                  <td> 29.0 </td>
+                  <td> 28.8 </td>
+                  <td> 29.5 </td>
+                  <td> 29.1 </td>
+                  <td> 29.2 </td>
+                </tr>
+
+            </tbody>
+            
+          </table>
+          <a href="https://miamioh.edu/oir/data/fbook/18-19/index.html">Source of Data</a>
+          </div><!--End table Div-->
+       </div> <!--Closing first column right after the header-->
+     </div> <!--Closing first row right after the header-->
+    </div><!-- Closing Site Container Div --> 
+    <div class="jumbotron" style="border-top: 5px solid red; margin-bottom: 0px;">
+      <footer>
+        <h2>Footer</h2>
+        <p>Nicholas Gerard CSE 451</p>
+        <ul>
+            <li style="display: inline;"><a href="http://ceclnx01.cec.miamioh.edu/~gerardnt/cse451-gerardnt-web/html2/index.html">index on CEC </a></li>
+          <li style="display: inline;"><a href="http://gerardnt.451.csi.miamioh.edu/cse451-gerardnt-web/html2/index.html">index on OpenStack </a></li>
+          <li style="display: inline;"><a href="http://gerardnt.451.csi.miamioh.edu/cse451-gerardnt-web/html2/index.html">index </a></li>
+        </ul>
+      </footer>
+    </div> <!--Closing footer Div-->
+</body>
+</html>

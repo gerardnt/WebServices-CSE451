@@ -1,0 +1,7 @@
+{
+    "require": {
+        "apereo/phpcas":"*",
+              "guzzlehttp/guzzle": "~6.0"
+    }
+}
+
